@@ -36080,11 +36080,11 @@ window.onload = function() {
 
         for (let ang = 1; ang < 31; ang++) {
             console.log("Beginning");
-            Dr([10, spikeToPlace, (ang + MYPLAYERANGLE) % 255, 0]);
-            Dr([10, spikeToPlace, (MYPLAYERANGLE - ang + 255) % 255, 0]);
+            Dr([10, spikeId, (ang + MYPLAYERANGLE) % 255, 0]);
+            Dr([10, spikeId, (MYPLAYERANGLE - ang + 255) % 255, 0]);
             console.log("Ending");
         }
-        Dr([10, spikeToPlace, MYPLAYERANGLE, 0]);
+        Dr([10, spikeId, MYPLAYERANGLE, 0]);
     };
     function ln(e, t, i, o, T, r) {
         var n = o.w1
